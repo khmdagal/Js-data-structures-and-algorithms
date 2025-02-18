@@ -1,0 +1,19 @@
+What is Linked lists
+
+
+
+
+*** Compared to Array ***
+-> Arrays have indexes
+-> Array are in contiguous places in memory
+
+Linked Lists 
+
+-> Linked Lists don't have indexes
+-> Linked Lists can be any where in the memory, unlike array
+
+*** Head, Tail and null ***
+-> head : points to the first item in the list
+-> tail : points to the last item in the list
+-> null : last item in the list points "null" eg: "null terminated list" 
+-> important each item in the list points to the next until the last item
