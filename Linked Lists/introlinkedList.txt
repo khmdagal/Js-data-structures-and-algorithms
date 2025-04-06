@@ -1,5 +1,23 @@
 What is Linked lists
 
+Linked lists is fundamental concept of data structure in computer science. It mainly involves EFFICIENT insertion and deletion operations
+compared to Arrays.
+
+        Topic                       Linked Lists                                              Array
+1) Data Structure                   Non-contiguous                                          Contiguous
+
+2) Memory Allocation      Allocated one by one to individual elements               Allocated to the whole array
+                                 
+3) Insertion/Deletion                   Efficient                                           Inefficient
+      (performance)
+
+4) Access                               Sequential                                             Random
+
+5) Index                                   No                                                    Yes
+
+6) Head/tail                               Yes                                                    No
+
+7) Caches misses                           Yes                                                    No
 
 
 
