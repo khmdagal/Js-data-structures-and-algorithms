@@ -63,18 +63,20 @@ class LinkedList{
         return this;
     }
 
-    shift(value){
+    shift(){
         if(!this.head) return undefined // if the list is empty, we return undefined
-        if(this.length === 1){ // if the list has only one node, to remove it we set head and tail to null
-            this.head = null;
+        
+        let tempValue = this.head; 
+        this.head = this.head.next; // if we have more than one node, we set the head to the next node
+        this.length--;
+        
+        tempValue.next = null; // we set the next of the removed node to null
+
+        if(this.length === 0){ // if we only had one node, we set the tail to null
             this.tail = null;
-        } else{
-            this.head = this.head.next; // if we have more than one node, we set the head to the next node
         }
        
-
-        this.length--;
-        return this
+        return tempValue; // we return the removed node
     }
   
 }
@@ -82,14 +84,15 @@ class LinkedList{
 
 let myLinkedList = new LinkedList(1);
 myLinkedList.push(2);
-myLinkedList.push(3);
-myLinkedList.push(4);
+// myLinkedList.push(3);
+// myLinkedList.push(4);
 
 
-console.log('==Before ==',myLinkedList)
+console.log(`==Before == length ${myLinkedList.length} Head ${myLinkedList.head.value}`, `Tail ${myLinkedList.tail.value}`)
+myLinkedList.shift();
 myLinkedList.shift();
 
-console.log('==After ==',myLinkedList)
+console.log(`==After == length ${myLinkedList.length} Head ${myLinkedList.head}`, `Tail ${myLinkedList.tail}`)
 
 console.log(myLinkedList);
-console.log('Head' , myLinkedList.head.value, 'Tail' , myLinkedList.tail.value);
+;
