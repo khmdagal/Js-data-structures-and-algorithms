@@ -1,0 +1,37 @@
+What is Linked lists
+
+Linked lists is fundamental concept of data structure in computer science. It mainly involves EFFICIENT insertion and deletion operations
+compared to Arrays.
+
+        Topic                       Linked Lists                                              Array
+1) Data Structure                   Non-contiguous                                          Contiguous
+
+2) Memory Allocation      Allocated one by one to individual elements               Allocated to the whole array
+                                 
+3) Insertion/Deletion                   Efficient                                           Inefficient
+      (performance)
+
+4) Access                               Sequential                                             Random
+
+5) Index                                   No                                                    Yes
+
+6) Head/tail                               Yes                                                    No
+
+7) Caches misses                           Yes                                                    No
+
+
+
+*** Compared to Array ***
+-> Arrays have indexes
+-> Array are in contiguous places in memory
+
+Linked Lists 
+
+-> Linked Lists don't have indexes
+-> Linked Lists can be any where in the memory, unlike array
+
+*** Head, Tail and null ***
+-> head : points to the first item in the list
+-> tail : points to the last item in the list
+-> null : last item in the list points "null" eg: "null terminated list" 
+-> important each item in the list points to the next until the last item
