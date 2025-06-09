@@ -1,0 +1,74 @@
+LL: Reverse Between ( ** Interview Question)
+⚠️ Advanced Challenge Alert: Linked List Mastery!
+
+Welcome to what many consider the pinnacle of Linked List challenges in this course! This exercise is not just a test of your coding skills, but also a measure of your problem-solving ability and understanding of complex data structures.
+
+Here's how you can tackle it:
+
+Visualize the Problem: Before diving into coding, grab a pen and paper. Sketch out the linked list and visualize each step of the process. This approach isn't just for beginners; it's exactly how seasoned developers plan their attack on complex problems.
+
+Seek Understanding Over Speed: Take your time to really grasp each part of the problem. The goal here is deep understanding, not just a quick solution. If you find yourself stuck, that's a part of the learning process.
+
+It's Okay to Take a Break: Feel free to step away from this challenge and return later. This course is designed to equip you with a growing set of skills, and sometimes, a bit of distance can bring new insights.
+
+Approach Like a Pro: Remember, facing a challenging problem is what being a professional developer is all about. Use this exercise to think, plan, and code like a pro.
+
+
+
+Now, let's dive into the exercise:
+
+___________________________________
+
+
+
+Implement a member function called reverseBetween(m, n) that reverses the nodes between indexes (using 0-based indexing)  m and n (inclusive) in the linked list.
+
+Note: this linked list class does NOT have a tail which will make this method easier to implement.
+
+Assumption: You can assume that m and n are not out of bounds.
+
+
+
+Output:
+
+The function should reverse the nodes between the indexes m and n in the linked list. The reversal should be done in-place.
+
+
+
+Constraints:
+
+You are not allowed to use any additional data structures (such as arrays) or modify the existing data structure.
+
+You can only traverse the linked list once.
+
+
+
+
+
+Example 1:
+
+Suppose you have a LinkedList object, list, with the following values:
+1 -> 2 -> 3 -> 4 -> 5
+
+
+After calling the reverseBetween(1, 3) function:
+
+list.reverseBetween(1, 3);
+The linked list should now have the following values:
+1 -> 4 -> 3 -> 2 -> 5
+
+
+
+
+
+Example 2:
+
+Now suppose you have a LinkedList object, list, with the following values:
+1 -> 2 -> 3 -> 4 -> 5 -> 6
+
+
+After calling the reverseBetween(3, 5) function:
+
+list.reverseBetween(3, 5);
+The linked list should now have the following values:
+1 -> 2 -> 3 -> 6 -> 5 -> 4
