@@ -1,0 +1,37 @@
+LL: Swap Pairs ( ** Interview Question)
+Write a method called swapPairs that swaps every two adjacent nodes in a singly linked list.
+
+If the list has an odd number of nodes, the last node remains in place.
+
+You may NOT just swap values. You must actually swap the nodes.
+
+
+
+
+
+🧪 Examples:
+
+Input: 1 -> 2 -> 3 -> 4
+Output: 2 -> 1 -> 4 -> 3
+ 
+Input: 1 -> 2 -> 3 -> 4 -> 5
+Output: 2 -> 1 -> 4 -> 3 -> 5
+ 
+Input: 1
+Output: 1
+ 
+Input: empty list
+Output: empty list
+
+
+
+
+📘 What This Exercise Is Designed to Teach
+
+How to manipulate pointers in a linked list
+
+Working with dummy nodes to simplify head management
+
+Understanding traversal and pointer updates
+
+Practicing while loops for in-place modification
