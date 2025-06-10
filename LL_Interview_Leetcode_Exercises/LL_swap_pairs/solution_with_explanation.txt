@@ -1,0 +1,49 @@
+swapPairs() {
+        // Create a dummy node pointing to head
+        // This helps simplify edge cases like swapping the head
+        const dummy = new Node(0);
+        dummy.next = this.head;
+    
+        // Set pointers to start of list
+        let previous = dummy;
+        let first = this.head;
+    
+        // Loop while there are at least two nodes to swap
+        while (first !== null && first.next !== null) {
+            // Store the second node
+            const second = first.next;
+    
+            // Point previous to second, beginning the swap
+            previous.next = second;
+    
+            // Link first to node after second
+            first.next = second.next;
+    
+            // Complete the swap: second now points to first
+            second.next = first;
+    
+            // Move previous forward to first
+            previous = first;
+    
+            // Move first forward to the next pair
+            first = first.next;
+        }
+    
+        // Update head in case it changed
+        this.head = dummy.next;
+    }   
+
+
+
+
+🧠 Explanation of the Code
+
+We use a dummy node so we don't need special logic for the head
+
+previous tracks the node before the current pair
+
+first and second are the two nodes being swapped
+
+After each swap, we update the previous and first pointers
+
+Finally, this.head is set to dummy.next to re

@@ -1,0 +1,53 @@
+Pseudocode Outline
+
+Create a dummy node pointing to the head
+
+Initialize previous as dummy and first as head
+
+While first and first.next are not null:
+
+Set second = first.next
+
+Reassign pointers to swap:
+
+previous.next = second
+
+first.next = second.next
+
+second.next = first
+
+Move previous to first
+
+Move first to first.next
+
+Update this.head to dummy.next
+
+
+
+
+
+💡 Hints
+
+A dummy node simplifies edge cases, especially for swapping at the head
+
+Don't create a new list — you must swap actual nodes
+
+Always update pointers in the correct order
+
+The key pattern is A -> B -> C becoming B -> A -> C
+
+
+
+
+
+📊 Step-by-Step Example (Visual Walkthrough)
+
+Input: 1 → 2 → 3 → 4 → 5
+
+Swap 1 and 2 → 2 → 1 → 3 → 4 → 5
+
+Swap 3 and 4 → 2 → 1 → 4 → 3 → 5
+
+Node 5 has no pair → leave it
+
+Final Output: 2 → 1 → 4 → 3 → 5
