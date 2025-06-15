@@ -82,8 +82,6 @@ class DoublyLinkedList {
     }
 
     get(value) {
-        let requiredNode;
-        // if (!this.head) return undefined;
 
         if (value < 0 || value >= this.length) return undefined;
 
