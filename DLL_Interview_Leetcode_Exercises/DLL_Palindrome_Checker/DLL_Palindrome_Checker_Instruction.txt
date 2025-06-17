@@ -1,0 +1,39 @@
+============= DLL: Palindrome Checker ( ** Interview Question). ===============
+
+Implement a member function called isPalindrome() 
+that checks if a doubly linked list is a palindrome.
+
+A doubly linked list is a palindrome if the sequence of values read from the 
+head to the tail is the same as the sequence of values read from the tail to the head.
+
+
+Output:
+Return a boolean value: true if the doubly linked list is a palindrome, and false otherwise.
+
+
+Constraints:
+You can only traverse the doubly linked list once.
+
+
+Example 1:
+Suppose you have a DoublyLinkedList object, list, with the following values:
+1 <-> 2 <-> 3 <-> 2 <-> 1
+
+After calling the isPalindrome() function:
+
+const result = list.isPalindrome();
+
+result should be true, as the doubly linked list is a palindrome.
+
+
+
+Example 2:
+Now suppose you have a DoublyLinkedList object, list, with the following values:
+3 <-> 1 <-> 2
+
+After calling the isPalindrome() function:
+
+const result = list.isPalindrome();
+
+result should be false, as the doubly linked list is not a palindrome.
+
