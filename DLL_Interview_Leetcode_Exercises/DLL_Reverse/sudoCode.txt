@@ -1,0 +1,21 @@
+Pseudo Code:
+
+1. Initialize current pointer to the head of the list
+
+2. Initialize temp pointer to null
+
+3. Loop while current pointer is not null
+
+   a. Set temp pointer to the previous node of the current pointer
+
+   b. Set the previous node of the current pointer to the next node of the current pointer
+
+   c. Set the next node of the current pointer to the temp pointer
+
+   d. Move current pointer to the previous node of the current pointer
+
+4. Set temp pointer to the head of the list
+
+5. Set the head of the list to the tail of the list
+
+6. Set the tail of the list to the temp pointer

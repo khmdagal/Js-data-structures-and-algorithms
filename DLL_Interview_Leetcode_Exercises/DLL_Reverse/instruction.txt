@@ -1,0 +1,46 @@
+DLL: Reverse ( ** Interview Question)
+===============================================
+Implement a member function called reverse() that 
+reverses the nodes of a doubly linked list.
+
+
+
+Output:
+
+The function should modify the doubly linked list in-place, 
+reversing the order of the nodes.
+
+
+============= Constraints: ============= 
+
+You can only reverse the nodes themselves, not just their values.
+
+
+
+============= Example 1: =============
+
+Suppose you have a DoublyLinkedList object, list, 
+with the following values:
+1 <-> 2 <-> 3 <-> 4 <-> 5
+
+After calling the reverse() function:
+
+list.reverse();
+
+The doubly linked list should now have the following values:
+5 <-> 4 <-> 3 <-> 2 <-> 1
+
+
+======== Example 2: =============
+
+Now suppose you have a DoublyLinkedList object, list, 
+with the following values:
+3 <-> 1 <-> 2
+
+After calling the reverse() function:
+
+list.reverse();
+
+The doubly linked list should now have the following values:
+2 <-> 1 <-> 3
+
