@@ -1,0 +1,62 @@
+📋 Pseudocode Outline
+
+Create two dummy nodes to start two separate lists.
+
+Traverse the list:
+
+If node value < x, add it to the first list.
+
+Else, add it to the second list.
+
+Connect the end of the first list to the start of the second.
+
+Update the list’s head and fix the prev pointers.
+
+
+
+
+
+💡 Hints
+
+Use dummy1 for nodes < x and dummy2 for nodes >= x.
+
+Detach each node from the original list by setting next and prev to null before moving it.
+
+Don’t forget to set the new head after combining the two lists.
+
+Always re-link prev pointers properly.
+
+
+
+
+
+📊 Step-by-Step Example (Visual Walkthrough)
+
+Input: 3 <-> 8 <-> 5 <-> 10 <-> 2 <-> 1, x = 5
+
+
+
+Initial state:
+
+Original: 3 <-> 8 <-> 5 <-> 10 <-> 2 <-> 1
+
+
+Partition logic:
+
+3 goes to the first list
+
+8, 5, 10 go to the second list
+
+2, 1 go to the first list
+
+
+
+Resulting lists:
+
+List 1 (dummy1): 3 <-> 2 <-> 1
+List 2 (dummy2): 8 <-> 5 <-> 10
+
+
+Final result after merge:
+
+3 <-> 2 <-> 1 <-> 8 <-> 5 <-> 10
