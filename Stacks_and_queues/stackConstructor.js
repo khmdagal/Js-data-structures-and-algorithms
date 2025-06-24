@@ -13,3 +13,7 @@ class Stacks {
         this.hight = 1
     }
 }
+
+const myStacks = new Stacks(4)
+
+console.log(myStacks)
