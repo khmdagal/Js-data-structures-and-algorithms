@@ -23,6 +23,16 @@ class Stacks {
         }
         this.hight++
         return this
+
+
+        /*
+        pushing an item onto a Stack, 
+        like popping an item off, is an O(1) operation; 
+        this means it takes a constant amount of time 
+        regardless of the Stack's size. 
+        Understanding this is essential 
+        for efficiently managing data in stack structures.
+        */
         
     }
 }

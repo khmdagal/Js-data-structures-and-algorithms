@@ -28,6 +28,14 @@ class Queues {
 
         this.length++
         return this
+
+         /*
+        adding/pushing/enqueueing a NODE into LAST a Queue have a time complexity of O(1), 
+        meaning these operations are performed in constant time, 
+        regardless of the size of the Queue. 
+        This efficiency is crucial for implementing 
+        fast and responsive data management systems.
+        */
     }
 
     dequeues() {
@@ -44,6 +52,14 @@ class Queues {
 
         this.length--
         return temp
+
+        /*
+        removing FIRST NODE from a Queue have a time complexity of O(1), 
+        meaning these operations are performed in constant time, 
+        regardless of the size of the Queue. 
+        This efficiency is crucial for implementing 
+        fast and responsive data management systems.
+        */
     }
 }
 

@@ -17,3 +17,10 @@ class Stacks {
 const myStacks = new Stacks(4)
 
 console.log(myStacks)
+/*
+y implemented using arrays or linked lists, 
+which are two fundamental data structures 
+used to manage stack operations efficiently. 
+This knowledge is essential for 
+understanding how stacks function in different programming contexts.
+*/
