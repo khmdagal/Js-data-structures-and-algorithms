@@ -1,0 +1,36 @@
+Pseudo Code:
+
+Method isPalindrome:
+
+    - If the length of the list is 0 or 1, 
+      return true (since an empty list or a single element list is a palindrome).
+
+
+
+    - Initialize two pointers:
+
+        1. forwardNode pointing to the head of the list.
+
+        2. backwardNode pointing to the tail of the list.
+
+
+
+    - Loop for half the length of the list (rounded down):
+
+        - If the value of forwardNode is not equal to the value of backwardNode, return false.
+
+          (This means that the list is not a palindrome since corresponding values from both ends are different.)
+
+        - Move forwardNode to the next node (forwardNode = forwardNode.next).
+
+        - Move backwardNode to the previous node (backwardNode = backwardNode.prev).
+
+
+
+    - If the loop completes without returning false, return true.
+
+      (This means all corresponding values from both ends matched, so the list is a palindrome.)
+
+
+
+End Method
