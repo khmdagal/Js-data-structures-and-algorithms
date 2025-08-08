@@ -26,6 +26,17 @@ class queues {
         this.length++
         return this
     }
+
+    dequeue(value){
+        if(this.length === 0) return undefined
+
+        let temp = this.first
+        this.first = this.first.next;
+        temp.next = null
+        
+        this.length--
+        return temp
+    }
 }
 
 const newQueue = new queues(1);
@@ -33,4 +44,7 @@ const newQueue = new queues(1);
 newQueue.enqueue(2)
 newQueue.enqueue(3)
 newQueue.enqueue(4)
-console.log(newQueue)
+console.log("===>>> enqueued",newQueue)
+
+console.log("===>>> dequeued", newQueue.dequeue(), newQueue)
+
