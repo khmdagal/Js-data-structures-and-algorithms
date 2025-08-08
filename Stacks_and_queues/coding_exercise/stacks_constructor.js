@@ -11,6 +11,22 @@ class Stacks {
         this.top = newNode
         this.length = 1
     }
+
+    push(value){
+        const newNode = new Node(value);
+        if(this.length == 0){
+            this.top = newNode;
+            this.next = null
+        }else{
+            const temp = this.top;
+            this.top = newNode;
+            newNode.next = temp
+            
+        }
+
+        this.length++
+        return this
+    }
 }
 
 const myStacks = new Stacks(2)
