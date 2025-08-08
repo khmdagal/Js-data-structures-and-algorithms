@@ -1,0 +1,10 @@
+What is Stacks?
+
+
+
+Stack is a collection of elements in a way of LIFO format 
+which means Last element added into stacks will go out first
+
+Common operations are:
+- Push: Adding element on top.
+- Pop: Remove element from the top
