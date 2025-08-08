@@ -27,10 +27,24 @@ class Stacks {
         this.length++
         return this
     }
+
+    pop(){
+        if (this.length === 0) return undefined
+        let temp = this.top
+        this.top = this.top.next
+        temp.next = null
+
+        this.length--
+        return temp
+    }
 }
 
 const myStacks = new Stacks(2)
 myStacks.push(3)
 myStacks.push(4)
 myStacks.push(5)
-console.log(myStacks)
+
+
+console.log("==> Push ",myStacks)
+
+console.log('==>> After Pop', myStacks.pop(), myStacks)
