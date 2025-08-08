@@ -1,0 +1,11 @@
+What is Queue?
+
+
+Queue is a way of collecting elements in a way of FIFO.
+Which means first element added to the colleciton of queue will 
+be the first element that goes out.
+
+
+Common operations
+- enqueue: Add element and the back of the queue.
+- dequeue: Remove element from the front.
