@@ -30,6 +30,22 @@ class HashTable{
         }
       
     }
+
+    keys(){
+        let keyArr =[]
+        for(let i = 0; i < this.dataMap.length; i++){
+            let currentIndex = this.dataMap[i]
+        
+            if(currentIndex){
+                for(let j = 0; j < currentIndex.length; j++){
+
+                    keyArr.push(currentIndex[j][0])
+                }
+
+            }
+        }
+        return keyArr
+    }
 }
 
 const myHashTable = new HashTable()
@@ -39,4 +55,5 @@ myHashTable.set("Ahmed", 80);
 myHashTable.set("cyf10", 100);
 
 //console.log(myHashTable.get("student"))
-console.log(myHashTable.get('khadar'))
+//console.log(myHashTable.get('khadar'))
+console.log(myHashTable.keys())
